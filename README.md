@@ -1,2 +1,4 @@
 # HelloWorld
-A Simple Application
+A simple application for learning build management.
+
+Checkout and run.
