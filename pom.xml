@@ -327,7 +327,6 @@
                         <reports>
                             <report>dependencies</report>
                             <report>project-team</report>
-                            <report>issue-tracking</report>
                             <report>cim</report>
                             <report>scm</report>
                         </reports>
@@ -368,6 +367,15 @@
         </plugins>
     </reporting>
 
+    <!-- Dependencies for the project -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+
+    <!-- Common Dependencies -->
     <dependencyManagement>
         <dependencies>
             <!-- *** Logging *** -->
