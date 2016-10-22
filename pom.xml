@@ -45,7 +45,7 @@
     <!-- Build-Management -->
     <ciManagement>
         <system>Travis</system>
-        <url>http://todo</url>
+        <url>https://travis-ci.org/denisw160/HelloWorld</url>
     </ciManagement>
 
     <!-- Package -->
