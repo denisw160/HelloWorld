@@ -371,12 +371,34 @@
             </plugin>
 
             <!-- JavaDoc Report -->
+            <!-- Default JavaDoc -->
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            -->
+
+            <!-- JavaDoc with UML diagrams -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+                    <!-- <docletPath>/path/to/UmlGraph.jar</docletPath> -->
+                    <docletArtifact>
+                        <groupId>org.umlgraph</groupId>
+                        <artifactId>doclet</artifactId>
+                        <version>5.1</version>
+                    </docletArtifact>
+                    <additionalparam>-views</additionalparam>
+                    <useStandardDocletOptions>true</useStandardDocletOptions>
                 </configuration>
             </plugin>
 
